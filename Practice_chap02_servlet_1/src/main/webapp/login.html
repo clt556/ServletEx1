@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>서블릿 연습 폼</title>
+<style type="text/css">
+	#LoginFormArea{
+		text-align: center;
+		margin: auto;
+		border: 1px solid green;
+		width: 300px;
+		background-color: azure;
+		color: grey;
+	}
+	
+	h1{
+		text-align: center;
+		color: blue;
+		font-size: 20px;
+	}
+</style>
+</head>
+<body>
+	<h1>로그인</h1>
+	<section id="LoginFormArea">
+	<form action="Login" method="post">
+		<label>아이디: </label>
+		<input type="text" name="id" id="id" required="required">
+		<br/>
+		<label>비밀번호: </label>
+		<input type="password" name="pwd" id="pwd" required="required">
+		<br/>
+		<span>아이디랑 비밀번호 입력해</span>
+		<input type="submit" value="login">
+	</form>
+	</section>
+	<section id="PhotoSelection">
+		<form action="choicePhoto" method="post">
+			<input type="checkbox" name="from" value="a.jpg"> 엘든링
+			<input type="checkbox" name="from" value="b.jpg"> 아머드코어
+			<input type="submit" value="전송하기"/>
+		</form>
+	</section>
+</body>
+</html>
